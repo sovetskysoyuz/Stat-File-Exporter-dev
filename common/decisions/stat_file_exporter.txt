@@ -1,0 +1,42 @@
+﻿export_gdp_list = {
+	is_shown = {
+		is_player = yes
+	}
+	
+	possible = {
+		is_player = yes
+	}
+	
+	when_taken = {
+		custom_tooltip = export_gdp_list_tt
+		debug_log = "Stat Export: Date: Country Tag: Country Name: GDP"
+		every_country = {
+			debug_log = "Stat Export: [TimeKeeper.GetCurrentDate.GetString]: [THIS.GetCountry.GetTagName]: [THIS.GetCountry.GetNameNoFormatting]: [FixedPointToInt(THIS.GetCountry.GetGDP)]"
+		}
+		debug_log = "Stat Export: End of Export"
+	}
+	
+	ai_chance = {
+		base = 0
+	}
+}
+
+export_stats_lists = {
+	is_shown = {
+		is_player = yes
+	}
+	
+	possible = {
+		is_player = yes
+	}
+	
+	when_taken = {
+		custom_tooltip = export_stats_lists_tt
+		trigger_event = stat_file_exporter.1001
+	}
+	
+	ai_chance = {
+		base = 0
+	}
+}
+

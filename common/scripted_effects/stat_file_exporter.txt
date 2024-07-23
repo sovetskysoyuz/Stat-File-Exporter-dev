@@ -1,0 +1,31 @@
+﻿export_country_GDPs_effect = {
+	debug_log = "Stat Export: Data Type: Date: Country Tag: Country Name: GDP"
+	every_country = {
+		debug_log = "Stat Export: Country GDP: [TimeKeeper.GetCurrentDate.GetString]: [THIS.GetCountry.GetTagName]: [THIS.GetCountry.GetNameNoFormatting]: [FixedPointToInt(THIS.GetCountry.GetGDP)]"
+	}
+	debug_log = "Stat Export: Country GDP: End of Export"
+}
+
+export_state_GDPs_effect = {
+	debug_log = "Stat Export: Data Type: Date: State: Country Tag: Country Name: GDP"
+	every_state = {
+		debug_log = "Stat Export: State GDP: [TimeKeeper.GetCurrentDate.GetString]:[THIS.GetState.GetNameNoFormatting]: [THIS.GetState.GetOwner.GetTagName]: [THIS.GetState.GetOwner.GetNameNoFormatting]: [FixedPointToInt(THIS.GetState.GetGDPContribution)]"
+	}
+	debug_log = "Stat Export: State GDP: End of Export"
+}
+
+export_country_populations_effect = {
+	debug_log = "Stat Export: Data Type: Date: Country Tag: Country Name: Population"
+	every_country = {
+		debug_log = "Stat Export: Country Population: [TimeKeeper.GetCurrentDate.GetString]: [THIS.GetCountry.GetTagName]: [THIS.GetCountry.GetNameNoFormatting]: [THIS.GetCountry.GetTotalPopulation]"
+	}
+	debug_log = "Stat Export: Country Population: End of Export"
+}
+
+export_state_populations_effect = {
+	debug_log = "Stat Export: Data Type: Date: State: Country Tag: Country Name: Population"
+	every_state = {
+		debug_log = "Stat Export: State Population: [TimeKeeper.GetCurrentDate.GetString]:[THIS.GetState.GetNameNoFormatting]: [THIS.GetState.GetOwner.GetTagName]: [THIS.GetState.GetOwner.GetNameNoFormatting]: [THIS.GetState.GetPopulationSize]"
+	}
+	debug_log = "Stat Export: State Population: End of Export"
+}

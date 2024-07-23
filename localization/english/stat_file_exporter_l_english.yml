@@ -1,0 +1,36 @@
+﻿l_english:
+export_gdp_list: "Export GDP List"
+export_gdp_list_desc: "List of countries and their GDP."
+export_gdp_list_tt: "Exports the list to debug.log"
+
+export_stats_lists: "Export Stats Lists"
+export_stats_lists_desc: "Export some stats."
+export_stats_lists_tt: "Opens a menu to select what to export."
+
+stat_file_exporter.1001.t: "Stat File Export Selector"
+stat_file_exporter.1001.d: "Select what data you want to dump to debug.log \n Use 'Esc' to open the Main Menu before opening the log so that the buffer is flushed \n ebug.log will be wiped on game launch!"
+stat_file_exporter.1001.a: "Export country GDPs"
+stat_file_exporter.1001.b: "Export state GDPs"
+stat_file_exporter.1001.c: "Export country populations"
+stat_file_exporter.1001.e: "Export state populations"
+stat_file_exporter.1001.f: "Export all"
+
+stat_file_exporter.1010.t: "Export Country GDPs"
+stat_file_exporter.1010.d: "Use 'Esc' to open the Main Menu before opening the log so that the buffer is flushed \n ebug.log will be wiped on game launch!"
+stat_file_exporter.1010.a: "OK"
+stat_file_exporter.1010.b: "Toggle monthly export"
+
+stat_file_exporter.1020.t: "Export State GDPs"
+stat_file_exporter.1020.d: "Use 'Esc' to open the Main Menu before opening the log so that the buffer is flushed \n ebug.log will be wiped on game launch!"
+stat_file_exporter.1020.a: "OK"
+stat_file_exporter.1020.b: "Toggle monthly export"
+
+stat_file_exporter.1030.t: "Export Country Populations"
+stat_file_exporter.1030.d: "Use 'Esc' to open the Main Menu before opening the log so that the buffer is flushed \n ebug.log will be wiped on game launch!"
+stat_file_exporter.1030.a: "OK"
+stat_file_exporter.1030.b: "Toggle monthly export"
+
+stat_file_exporter.1040.t: "Export State Populations"
+stat_file_exporter.1040.d: "Use 'Esc' to open the Main Menu before opening the log so that the buffer is flushed \n ebug.log will be wiped on game launch!"
+stat_file_exporter.1040.a: "OK"
+stat_file_exporter.1040.b: "Toggle monthly export"

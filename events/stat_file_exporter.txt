@@ -1,0 +1,167 @@
+﻿namespace = stat_file_exporter
+
+# export selector menu
+stat_file_exporter.1001 = {
+	type = country_event
+	
+	title = stat_file_exporter.1001.t
+	desc = stat_file_exporter.1001.d
+	
+	event_image = {
+		video = "unspecific_world_fair"
+	}
+	
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+	
+	duration = 1
+
+	# country GDPs
+	option = {
+		name = stat_file_exporter.1001.a
+		default_option = yes
+		trigger_event = stat_file_exporter.1010
+	}
+	# worldwide state GDPs
+	option = {
+		name = stat_file_exporter.1001.b
+		trigger_event = stat_file_exporter.1020
+	}
+	# worldwide populations
+	option = {
+		name = stat_file_exporter.1001.c
+		trigger_event = stat_file_exporter.1030
+	}
+	# worldwide state populations
+	option = {
+		name = stat_file_exporter.1001.e
+		trigger_event = stat_file_exporter.1040
+	}
+	# all
+	option = {
+		name = stat_file_exporter.1001.f
+		export_country_GDPs_effect = yes
+		export_state_GDPs_effect = yes
+		export_country_populations_effect = yes
+		export_state_populations_effect = yes
+	}
+}
+
+stat_file_exporter.1010 = {
+	type = country_event
+	
+	title = stat_file_exporter.1010.t
+	desc = stat_file_exporter.1010.d
+	
+	event_image = {
+		video = "unspecific_world_fair"
+	}
+
+	duration = 0
+	
+	immediate = {
+		export_country_GDPs_effect = yes
+	}
+
+	# OK
+	option = {
+		name = stat_file_exporter.1010.a
+		default_option = yes
+	}
+	# Toggle monthly export (not functional)
+	option = {
+		trigger = {
+			always = no
+		}
+		name = stat_file_exporter.1010.b
+	}
+}
+
+stat_file_exporter.1020 = {
+	type = country_event
+	
+	title = stat_file_exporter.1020.t
+	desc = stat_file_exporter.1020.d
+	
+	event_image = {
+		video = "unspecific_world_fair"
+	}
+	
+	duration = 0
+	
+	immediate = {
+		export_state_GDPs_effect = yes
+	}
+
+	# OK
+	option = {
+		name = stat_file_exporter.1020.a
+		default_option = yes
+	}
+	# Toggle monthly export (not functional)
+	option = {
+		trigger = {
+			always = no
+		}
+		name = stat_file_exporter.1020.b
+	}
+}
+
+stat_file_exporter.1030 = {
+	type = country_event
+	
+	title = stat_file_exporter.1030.t
+	desc = stat_file_exporter.1030.d
+	
+	event_image = {
+		video = "unspecific_world_fair"
+	}
+	
+	duration = 0
+	
+	immediate = {
+		export_country_populations_effect = yes
+	}
+
+	# OK
+	option = {
+		name = stat_file_exporter.1030.a
+		default_option = yes
+	}
+	# Toggle monthly export (not functional)
+	option = {
+		trigger = {
+			always = no
+		}
+		name = stat_file_exporter.1030.b
+	}
+}
+
+stat_file_exporter.1040 = {
+	type = country_event
+	
+	title = stat_file_exporter.1030.t
+	desc = stat_file_exporter.1030.d
+	
+	event_image = {
+		video = "unspecific_world_fair"
+	}
+	
+	duration = 0
+	
+	immediate = {
+		export_state_populations_effect = yes
+	}
+
+	# OK
+	option = {
+		name = stat_file_exporter.1040.a
+		default_option = yes
+	}
+	# Toggle monthly export (not functional)
+	option = {
+		trigger = {
+			always = no
+		}
+		name = stat_file_exporter.1040.b
+	}
+}
