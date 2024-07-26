@@ -1,4 +1,4 @@
-﻿export_country_GDPs_effect = {
+export_country_GDPs_effect = {
 	debug_log = "Stat Export: Data Type: Date: Country Tag: Country Name: GDP"
 	every_country = {
 		debug_log = "Stat Export: Country GDP: [TimeKeeper.GetCurrentDate.GetString]: [THIS.GetCountry.GetTagName]: [THIS.GetCountry.GetNameNoFormatting]: [FixedPointToInt(THIS.GetCountry.GetGDP)]"
@@ -28,4 +28,12 @@ export_state_populations_effect = {
 		debug_log = "Stat Export: State Population: [TimeKeeper.GetCurrentDate.GetString]:[THIS.GetState.GetNameNoFormatting]: [THIS.GetState.GetOwner.GetTagName]: [THIS.GetState.GetOwner.GetNameNoFormatting]: [THIS.GetState.GetPopulationSize]"
 	}
 	debug_log = "Stat Export: State Population: End of Export"
+}
+
+export_character_stats_effect = {
+	debug_log = "Stat Export: Data Type: Date: Character Name: ID: Character Type: Historical: Sex: Culture: Religion: Age: Country: Ideology: Popularity"
+	every_character = {
+		debug_log = "Stat Export: Character: [TimeKeeper.GetCurrentDate.GetString]:[THIS.GetCharacter.GetFullNameWithTitleNoFormatting]:[THIS.GetCharacter.GetID]:[THIS.GetCharacter.GetPrimaryRoleName]:[Select_CString(THIS.GetCharacter.IsHistorical, 'Historical', 'Generated')]:[THIS.GetCharacter.GetGender]:[THIS.GetCharacter.GetCulture.GetNameNoFormatting]:[THIS.GetCharacter.GetReligion.GetNameNoFormatting]:[THIS.GetCharacter.GetAge]:[THIS.GetCharacter.GetCountry.GetNameNoFormatting]:[THIS.GetCharacter.GetIdeology.GetNameNoFormatting]:[THIS.GetCharacter.GetPopularity]"
+	}
+	debug_log = "Stat Export: Character: End of Export"
 }
