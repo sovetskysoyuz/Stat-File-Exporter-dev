@@ -1,0 +1,16 @@
+﻿stat_file_exporter_monthly = {
+	effect = {
+		export_country_GDPs_effect = yes
+		export_state_GDPs_effect = yes
+		export_country_populations_effect = yes
+		export_state_populations_effect = yes
+		export_character_stats_effect = yes
+		export_market_stats_effect = yes
+	}
+}
+
+on_monthly_pulse = {
+	on_actions = {
+		stat_file_exporter_monthly
+	}
+}

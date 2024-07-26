@@ -29,3 +29,18 @@ export_state_populations_effect = {
 	}
 	debug_log = "Stat Export: State Population: End of Export"
 }
+
+export_character_stats_effect = {
+	debug_log = "Stat Export: Data Type: Date: Character Name: ID: Character Type: Historical: Sex: Culture: Religion: Age: Country: Ideology: Popularity"
+	every_character = {
+		debug_log = "Stat Export: Character: [TimeKeeper.GetCurrentDate.GetString]:[THIS.GetCharacter.GetFullNameWithTitleNoFormatting]:[THIS.GetCharacter.GetID]:[THIS.GetCharacter.GetPrimaryRoleName]:[Select_CString(THIS.GetCharacter.IsHistorical, 'Historical', 'Generated')]:[THIS.GetCharacter.GetGender]:[THIS.GetCharacter.GetCulture.GetNameNoFormatting]:[THIS.GetCharacter.GetReligion.GetNameNoFormatting]:[THIS.GetCharacter.GetAge]:[THIS.GetCharacter.GetCountry.GetNameNoFormatting]:[THIS.GetCharacter.GetIdeology.GetNameNoFormatting]:[THIS.GetCharacter.GetPopularity]"
+	}
+	debug_log = "Stat Export: Character: End of Export"
+}
+
+export_market_stats_effect = {
+	debug_log = "Stat Export: Data Type: Date: Market Name: Owner: GDP"
+	every_market = {
+		debug_log = "Stat Export: Market: [TimeKeeper.GetCurrentDate.GetString]:[THIS.GetMarket.GetNameNoFormatting]:[THIS.GetMarket.GetOwner.GetNameNoFormatting]:[THIS.GetMarket.GetMarketGDPValue]"
+	}
+}

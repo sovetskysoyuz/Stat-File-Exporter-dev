@@ -43,6 +43,8 @@ stat_file_exporter.1001 = {
 		export_state_GDPs_effect = yes
 		export_country_populations_effect = yes
 		export_state_populations_effect = yes
+		export_character_stats_effect = yes
+		export_market_stats_effect = yes
 	}
 }
 
